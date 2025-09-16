@@ -1,0 +1,52 @@
+package net.javaguide.basedomains.dto;
+
+public class OrderEvent {
+    private String status;
+    private String message;
+    private Order order;
+
+    public OrderEvent() {
+    }
+
+    public OrderEvent(String status, String message, Order order) {
+        this.status = status;
+        this.message = message;
+        this.order = order;
+    }
+
+    // Getter & Setter for status
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
+    }
+
+    // Getter & Setter for message
+    public String getMessage() {
+        return message;
+    }
+
+    public void setMessage(String message) {
+        this.message = message;
+    }
+
+    // Getter & Setter for order
+    public Order getOrder() {
+        return order;
+    }
+
+    public void setOrder(Order order) {
+        this.order = order;
+    }
+
+    @Override
+    public String toString() {
+        return "OrderEvent{" +
+                "status='" + status + '\'' +
+                ", message='" + message + '\'' +
+                ", order=" + order +
+                '}';
+    }
+}
